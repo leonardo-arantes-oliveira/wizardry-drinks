@@ -79,7 +79,7 @@ videoRef.current.onloadedmetadata = setupVideoAnimation
 
 return (
 <>
-    <section id="hero" className="noisy" style={{'background-image': `url(${noisyBg})`}}>
+    <section id="hero" className="noisy" style={{backgroundImage: `url(${noisyBg})`}}>
         <h1 className="title">Magic</h1>
         <img src={heroContent.leftLeaf} className="left-leaf" />
         <img src={heroContent.rightLeaf} className="right-leaf" />

@@ -85,7 +85,6 @@ body {
 
     .noisy {
         @apply absolute inset-0 size-full;
-        background-image: var(--bg-noisy);
         background-repeat: repeat;
     }
 
