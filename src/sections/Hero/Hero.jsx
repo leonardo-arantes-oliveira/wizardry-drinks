@@ -1,3 +1,4 @@
+import noisyBg from '../../assets/images/noisy.png' 
 import {useRef} from "react"
 import {useMediaQuery} from "react-responsive"
 import {gsap} from "gsap"
@@ -78,7 +79,7 @@ videoRef.current.onloadedmetadata = setupVideoAnimation
 
 return (
 <>
-    <section id="hero" className="noisy">
+    <section id="hero" className="noisy" style={{'background-image': `url(${noisyBg})`}}>
         <h1 className="title">Magic</h1>
         <img src={heroContent.leftLeaf} className="left-leaf" />
         <img src={heroContent.rightLeaf} className="right-leaf" />
