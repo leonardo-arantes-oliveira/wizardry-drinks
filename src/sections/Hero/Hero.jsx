@@ -26,6 +26,16 @@ gsap.from(paragraphSplit.lines,{
     stagger: 0.06,
     delay: 1,
 });
+gsap.timeline({
+    scrollTrigger: {
+        trigger: '#hero',
+        start: 'top top',
+        end: 'bottom top',
+        scrub: 1,
+    }
+})
+.to('.right-leaf',{y: 200},0)
+.to('.left-leaf',{y: -200},0)
 
 },[]);
 
@@ -40,7 +50,7 @@ return (
         <div className="body">
             <div className="content">
                 <div className="space-y-5 hidden md:block">
-                    <p>Classico-</p>
+                    <p>Classico-Delirante-Espetacular</p>
                     <p className="subtitle">Uma sensação <br/>a cada gole</p>
                 </div>
                 <div className="view-cocktails">
