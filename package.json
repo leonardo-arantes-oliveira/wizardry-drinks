@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://github.com/leonardo-arantes-oliveira/gsap-interactive-desing",
+  "homepage": "https://leonardo-arantes-oliveira.github.io/wizardry-drinks",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
