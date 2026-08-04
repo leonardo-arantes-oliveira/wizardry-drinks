@@ -4,6 +4,8 @@ import {gsap} from "gsap"
 import {useGSAP} from "@gsap/react"
 import {SplitText} from "gsap/SplitText"
 
+import { heroContent } from '../../../data/heroData.js';
+
 
 const Hero = () => {
 const videoRef = useRef();
@@ -78,8 +80,8 @@ return (
 <>
     <section id="hero" className="noisy">
         <h1 className="title">Magic</h1>
-        <img src="/images/hero-left-leaf.png" className="left-leaf" />
-        <img src="/images/hero-right-leaf.png" className="right-leaf" />
+        <img src={heroContent.leftLeaf} className="left-leaf" />
+        <img src={heroContent.rightLeaf} className="right-leaf" />
 
         <div className="body">
             <div className="content">
@@ -95,7 +97,7 @@ return (
         </div>
     </section>
     <div className="video absolute inset-0">
-        <video ref={videoRef} src="/videos/herobg.mp4" muted playsInline preload="auto">
+        <video ref={videoRef} src={heroContent.heroVideo} muted playsInline preload="auto">
         </video>
     </div>
 </>

@@ -1,4 +1,4 @@
-import { navLinks } from '../../../constants/index.js'
+import { navLinks,logo } from '../../../constants/index.js'
 import { gsap } from 'gsap'
 import { useGSAP } from '@gsap/react'
 
@@ -23,7 +23,7 @@ return (
     <nav>
         <div>
             <a href="#home" className="flex items-center gap-2">
-                <img src="/images/logo.svg" alt="Velvet Pour Logo" />
+                <img src={logo.wizardryLogo} alt="wizardry-logo" />
                 <p>
                     Wizardry Drinks
                 </p>
