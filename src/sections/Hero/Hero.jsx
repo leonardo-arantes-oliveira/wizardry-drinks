@@ -1,9 +1,14 @@
+import {useRef} from "react"
+import {useMediaQuery} from "react-responsive"
 import {gsap} from "gsap"
 import {useGSAP} from "@gsap/react"
 import {SplitText} from "gsap/SplitText"
 
 
 const Hero = () => {
+const videoRef = useRef();
+const isMobile = useMediaQuery({maxWidth: 768 });
+
 
 useGSAP(() => {
 const heroSplit = new SplitText('.title',{type:'chars,words'})
@@ -37,15 +42,44 @@ gsap.timeline({
 .to('.right-leaf',{y: 200},0)
 .to('.left-leaf',{y: -200},0)
 
+
+const startValue = isMobile ? 'top 50%' : 'center 60%'
+const endValue = isMobile ? '120% top' : 'bottom top'
+
+
+const setupVideoAnimation = () => {
+gsap.timeline({
+    scrollTrigger: {
+    trigger: videoRef.current,
+    start: startValue,
+    end: endValue,
+    scrub: 1,
+    pin: true,
+    }
+}).to(videoRef.current, {
+    currentTime: videoRef.current.duration,
+    ease: 'none'
+})
+}
+
+
+if (videoRef.current.readyState >= 1) {
+setupVideoAnimation()
+} else {
+videoRef.current.onloadedmetadata = setupVideoAnimation
+}
+
+
 },[]);
 
 
 
 return (
+<>
     <section id="hero" className="noisy">
         <h1 className="title">Magic</h1>
-        <img src="../../../public\images\hero-left-leaf.png" className="left-leaf"/>
-        <img src="../../../public\images\hero-right-leaf.png" className="right-leaf"/>
+        <img src="/images/hero-left-leaf.png" className="left-leaf" />
+        <img src="/images/hero-right-leaf.png" className="right-leaf" />
 
         <div className="body">
             <div className="content">
@@ -60,6 +94,11 @@ return (
             </div>
         </div>
     </section>
+    <div className="video absolute inset-0">
+        <video ref={videoRef} src="/videos/herobg.mp4" muted playsInline preload="auto">
+        </video>
+    </div>
+</>
 )
 }
 
