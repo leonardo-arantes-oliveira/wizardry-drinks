@@ -26,16 +26,16 @@ return (
         <div className="mb-16 md:px-0 px-5">
             <div className="content">
                 <div className="md:col-span-8">
-                    <p className="badge">Melhores Cockteis</p>
-                    <h2>Aqui cada detalhe importa <span className="text-white">-</span> da mistura à apresentação</h2>
+                    <p className="badge">Coquetéis Premium</p>
+                    <h2>Do ambiente à bebida  <span className="text-white">—</span> Tudo é impecável</h2>
                 </div>
                 <div className="sub-content">
-                    <p>Cada drink que servimos é uma obra de arte, cuidadosamente elaborada para proporcionar uma experiência sensorial única.</p>
+                    <p>Nossos coquetéis equilibram técnica e sofisticação, desenhados exclusivamente para elevar os sentidos do seu paladar.</p>
                     <div>
                         <p className="md:text-3xl text-xl font-bold">
-                            <span>4.5</span>/5
+                            <span>4.7</span>/5
                         </p>
-                        <p className="text-sm text-white-100">Mais de 1200 consumidores</p>
+                        <p className="text-sm text-white-100">Mais de 1.200 experiências únicas.</p>
                     </div>
                 </div>
             </div>

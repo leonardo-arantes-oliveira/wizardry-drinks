@@ -87,11 +87,11 @@ return (
         <div className="body">
             <div className="content">
                 <div className="space-y-5 hidden md:block">
-                    <p>Classico-Delirante-Espetacular</p>
-                    <p className="subtitle">Uma sensação <br/>a cada gole</p>
+                    <p>Único-Sublime-Marcante</p>
+                    <p className="subtitle">Uma nova sensação <br/>a cada gole</p>
                 </div>
                 <div className="view-cocktails">
-                    <p className="subtitle">Cada drink do menu é uma mistura de ingredientes frescos e de qualidade.Feitos para delirar seus sentidos!</p>
+                    <p className="subtitle">Cada drink do menu combina ingredientes frescos e de alta qualidade. Uma experiência feita para extasiar seus sentidos!</p>
                     <a href="#cocktails" className="btn">Ver Drinks</a>
                 </div>
             </div>
