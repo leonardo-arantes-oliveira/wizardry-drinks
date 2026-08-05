@@ -13,6 +13,7 @@ import Cocktails from './sections/Cocktails/Cocktails.jsx'
 import Sobre from './sections/Sobre/Sobre.jsx'
 import Art from './sections/Art/Art.jsx';
 import Menu from './sections/Menu/Menu.jsx';
+import Contato from './sections/Contato/Contato.jsx';
 
 const App = () => {
 return (
@@ -23,6 +24,7 @@ return (
             <Sobre/>
             <Art/>
             <Menu/>
+            <Contato/>
         </main>
 )
 }
