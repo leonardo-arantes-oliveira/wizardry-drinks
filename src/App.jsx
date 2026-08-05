@@ -11,6 +11,7 @@ import Navbar from './components/Navbar/Navbar.jsx'
 import Hero from './sections/Hero/Hero.jsx'
 import Cocktails from './sections/Cocktails/Cocktails.jsx'
 import Sobre from './sections/Sobre/Sobre.jsx'
+import Art from './sections/Art/Art.jsx';
 
 const App = () => {
 return (
@@ -19,6 +20,7 @@ return (
             <Hero />
             <Cocktails />
             <Sobre/>
+            <Art/>
         </main>
 )
 }

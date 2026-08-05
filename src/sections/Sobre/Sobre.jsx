@@ -8,7 +8,7 @@ import {ScrollTrigger} from 'gsap/ScrollTrigger.js'
 const Sobre = () => {
 
 useGSAP(()=>{
-    const aboutSplit = SplitText.create('#about h2',{tipe:'words',})
+    const aboutSplit = SplitText.create('#about h2,#about p',{tipe:'words',})
     const aboutTimeline = gsap.timeline({
         scrollTrigger:{
             trigger:"#about",
