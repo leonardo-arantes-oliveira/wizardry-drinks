@@ -9,15 +9,15 @@ gsap.registerPlugin(ScrollTrigger,SplitText);
 //components imports
 import Navbar from './components/Navbar/Navbar.jsx'
 import Hero from './sections/Hero/Hero.jsx'
+import Cocktails from './sections/Cocktails/Cocktails.jsx'
+
 
 const App = () => {
 return (
         <main>
             <Navbar />
             <Hero />
-            <div className="h-dvh bg-black">
-
-            </div>
+            <Cocktails />
         </main>
 )
 }
