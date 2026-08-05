@@ -12,6 +12,7 @@ import Hero from './sections/Hero/Hero.jsx'
 import Cocktails from './sections/Cocktails/Cocktails.jsx'
 import Sobre from './sections/Sobre/Sobre.jsx'
 import Art from './sections/Art/Art.jsx';
+import Menu from './sections/Menu/Menu.jsx';
 
 const App = () => {
 return (
@@ -21,6 +22,7 @@ return (
             <Cocktails />
             <Sobre/>
             <Art/>
+            <Menu/>
         </main>
 )
 }
