@@ -10,7 +10,7 @@ import profile4 from '../src/assets/images/profile4.webp';
 // Importação de Ícones de Redes Sociais
 import instaIcon from '../src/assets/images/insta.webp';
 import gitIconR from '../src/assets/images/gitroxo.webp';
-import gitIconB from '../src/assets/images/gitbranco.webp';
+import linIcon from '../src/assets/images/linicon.webp';
 
 // Importação das Imagens do Slider/Drinks
 import drink1 from '../src/assets/images/drink1.webp';
@@ -152,8 +152,8 @@ const socials = [
 },
 {
     name: "GitHub-Leo",
-    icon: gitIconB,
-    url: "https://github.com/leonardo-arantes-oliveira",
+    icon: linIcon,
+    url: "https://www.linkedin.com/in/leonardoarantesdeoliveira/",
 },
 ];
 
