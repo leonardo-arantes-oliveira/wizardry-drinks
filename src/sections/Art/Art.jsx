@@ -7,7 +7,7 @@ import { useMediaQuery } from 'react-responsive'
 import {featureLists, goodLists} from '../../../constants/index'
 import checkImg from '../../assets/images/check.webp'
 import cocktailImg from '../../assets/images/under-img.webp'
-
+import maskImg from '../../assets/images/mask-img.webp'
 
 
 const Art = () => {
@@ -44,7 +44,7 @@ return (
                     ))}
                 </ul>
                 <div className="cocktail-img">
-                    <img src={cocktailImg} alt="cocktail" className="abs-center masked-img size-full object-contain" />
+                    <img src={cocktailImg} alt="cocktail" className="abs-center masked-img size-full object-contain" style={{WebkitMaskImage: `url(${maskImg})`,maskImage: `url(${maskImg})`}}/>
                 </div>
                 <ul className="space-y-4 will-fade">
                     {featureLists.map((feature,index)=>(
