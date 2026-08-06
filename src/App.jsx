@@ -5,8 +5,12 @@ import { gsap } from 'gsap';
 import { ScrollTrigger,SplitText } from 'gsap/all';
 gsap.registerPlugin(ScrollTrigger,SplitText);
 
+import { lazy } from 'react';
 
 //components imports
+
+
+
 import Navbar from './components/Navbar/Navbar.jsx'
 import Hero from './sections/Hero/Hero.jsx'
 import Cocktails from './sections/Cocktails/Cocktails.jsx'

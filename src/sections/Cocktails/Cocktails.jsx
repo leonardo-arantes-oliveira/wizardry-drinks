@@ -3,7 +3,7 @@ import {useGSAP} from '@gsap/react'
 import {ScrollTrigger} from 'gsap/ScrollTrigger'
 
 
-import noisyBg from '../../assets/images/noisy.png'
+import noisyBg from '../../assets/images/noisy.webp'
 import { heroContent } from '../../../data/heroData.js';
 import { cocktailLists, mockTailLists } from '../../../constants/index.js'
 

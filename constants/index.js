@@ -2,21 +2,21 @@
 import wizardryLogo from '../src/assets/images/logo.svg';
 
 // Importação de Perfis
-import profile1 from '../src/assets/images/profile1.png';
-import profile2 from '../src/assets/images/profile2.png';
-import profile3 from '../src/assets/images/profile3.png';
-import profile4 from '../src/assets/images/profile4.png';
+import profile1 from '../src/assets/images/profile1.webp';
+import profile2 from '../src/assets/images/profile2.webp';
+import profile3 from '../src/assets/images/profile3.webp';
+import profile4 from '../src/assets/images/profile4.webp';
 
 // Importação de Ícones de Redes Sociais
-import instaIcon from '../src/assets/images/insta.png';
-import gitIconR from '../src/assets/images/gitroxo.png';
+import instaIcon from '../src/assets/images/insta.webp';
+import gitIconR from '../src/assets/images/gitroxo.webp';
 import gitIconB from '../src/assets/images/gitbranco.webp';
 
 // Importação das Imagens do Slider/Drinks
-import drink1 from '../src/assets/images/drink1.png';
-import drink2 from '../src/assets/images/drink2.png';
-import drink3 from '../src/assets/images/drink3.png';
-import drink4 from '../src/assets/images/drink4.png';
+import drink1 from '../src/assets/images/drink1.webp';
+import drink2 from '../src/assets/images/drink2.webp';
+import drink3 from '../src/assets/images/drink3.webp';
+import drink4 from '../src/assets/images/drink4.webp';
 
 
 const logo = {wizardryLogo};

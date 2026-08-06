@@ -24,7 +24,7 @@ return (
         <div>
             <a href="#home" className="flex items-center gap-2">
                 <img src={logo.wizardryLogo} alt="wizardry-logo" />
-                <p>
+                <p className='text-base'>
                     Wizardry Drinks
                 </p>
             </a>

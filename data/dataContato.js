@@ -1,5 +1,5 @@
-import cLeftLeaf from '../src/assets/images/footer-left-leaf.png'
-import cRightLeaf from '../src/assets/images/footer-right-leaf.png'
+import cLeftLeaf from '../src/assets/images/footer-left-leaf.webp'
+import cRightLeaf from '../src/assets/images/footer-right-leaf.webp'
 
 export const cLeafs ={
     cLeftLeaf,

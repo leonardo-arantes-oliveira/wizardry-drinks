@@ -45,7 +45,7 @@ return (
                         ${isActive 
                         ? 'text-white border-white' 
                     : 'text-white/50 border-white/50' }`}
-                    onClick={()=>goToSlide(index)}>
+                    onClick={()=>goToSlide(index)} aria-hidden='true'>
                         {cocktail.name}
                     </button>
                 )
@@ -55,15 +55,15 @@ return (
             <div  className='arrows'>
                 <button className='text-left' onClick={()=> goToSlide(currentIndex-1)}>
                     <span>{prevCocktail.name}</span>
-                    <img src={menuArrows.leftArrow} alt="left-arrow" aria-hidden='true' />
+                    <img src={menuArrows.leftArrow} alt="left-arrow" aria-label={`Ver cocktail anterior: ${prevCocktail?.name || 'Anterior'}`} />
                 </button>
                 <button className='text-right' onClick={()=> goToSlide(currentIndex+1)}>
                     <span>{nextCocktail.name}</span>
-                    <img src={menuArrows.rightArrow} alt="right-arrow" aria-hidden='true' />
+                    <img src={menuArrows.rightArrow} alt="right-arrow" aria-label={`Ver próximo cocktail: ${nextCocktail?.name || 'Próximo'}`} />
                 </button>
             </div>
             <div className='cocktail'>
-                <img src={currentCocktail.image} alt="current-cocktail" className='object-contain'/>
+                <img src={currentCocktail.image} alt={currentCocktail.name || "Imagem do cocktail"} className='object-contain'/>
             </div>
             <div className='recipe'>
                 <div ref={contentRef} className='info'>

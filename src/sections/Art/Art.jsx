@@ -5,8 +5,8 @@ import { useGSAP } from '@gsap/react'
 
 import { useMediaQuery } from 'react-responsive'
 import {featureLists, goodLists} from '../../../constants/index'
-import checkImg from '../../assets/images/check.png'
-import cocktailImg from '../../assets/images/under-img.jpg'
+import checkImg from '../../assets/images/check.webp'
+import cocktailImg from '../../assets/images/under-img.webp'
 
 
 

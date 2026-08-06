@@ -1,4 +1,4 @@
-import noisyBg from '../../assets/images/noisy.png' 
+import noisyBg from '../../assets/images/noisy.webp' 
 import {useRef} from "react"
 import {useMediaQuery} from "react-responsive"
 import {gsap} from "gsap"
@@ -8,14 +8,20 @@ import {SplitText} from "gsap/SplitText"
 import { heroContent } from '../../../data/heroData.js';
 
 
+
 const Hero = () => {
 const videoRef = useRef();
 const isMobile = useMediaQuery({maxWidth: 768 });
 
 
+const baseUrl = import.meta.env.BASE_URL;
+const videoSrc = isMobile 
+? `${baseUrl}video/herobg-mobile.mp4` 
+: `${baseUrl}video/herobg-desktop.mp4`;
+
 useGSAP(() => {
-const heroSplit = new SplitText('.title',{type:'chars,words'})
-const paragraphSplit = new SplitText('.subtitle',{type:'lines'})
+const heroSplit = new SplitText('.title',{type:'chars,words',aria:'none'})
+const paragraphSplit = new SplitText('.subtitle',{type:'lines',aria:'none'})
 heroSplit.chars.forEach((char)=> char.classList.add('text-gradient'))
 
 
@@ -81,8 +87,8 @@ return (
 <>
     <section id="hero" className="noisy" style={{backgroundImage: `url(${noisyBg})`}}>
         <h1 className="title">Magic</h1>
-        <img src={heroContent.leftLeaf} className="left-leaf" />
-        <img src={heroContent.rightLeaf} className="right-leaf" />
+        <img src={heroContent.leftLeaf} className="left-leaf" alt='left-leaf' />
+        <img src={heroContent.rightLeaf} className="right-leaf" alt='right-leaf' />
 
         <div className="body">
             <div className="content">
@@ -98,7 +104,8 @@ return (
         </div>
     </section>
     <div className="video absolute inset-0">
-        <video ref={videoRef} src={heroContent.heroVideo} muted playsInline preload="auto">
+        <video ref={videoRef} src={videoSrc} muted playsInline preload="auto" aria-hidden="true">
+        <track kind="captions" src="" srcLang="pt" label="Sem áudio" default />
         </video>
     </div>
 </>

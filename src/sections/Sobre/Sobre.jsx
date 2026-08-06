@@ -1,4 +1,4 @@
-import noisyBg from '../../assets/images/noisy.png'
+import noisyBg from '../../assets/images/noisy.webp'
 import {aboutData} from '../../../data/aboutData.js'
 import gsap from 'gsap'
 import {useGSAP} from '@gsap/react'
@@ -8,7 +8,7 @@ import {ScrollTrigger} from 'gsap/ScrollTrigger.js'
 const Sobre = () => {
 
 useGSAP(()=>{
-    const aboutSplit = SplitText.create('#about h2, .splitAbout',{tipe:'words',})
+    const aboutSplit = SplitText.create('#about h2, .splitAbout',{tipe:'words',aria:'none'})
     const aboutTimeline = gsap.timeline({
         scrollTrigger:{
             trigger:"#about",
