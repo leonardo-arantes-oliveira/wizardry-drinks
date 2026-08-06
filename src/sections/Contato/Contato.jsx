@@ -5,6 +5,9 @@ import { socials } from '../../../constants/index'
 import gsap from 'gsap'
 import {SplitText} from 'gsap/all'
 import { useGSAP } from '@gsap/react'
+
+
+
 const Contato = () => {
 useGSAP(()=>{
     const splitFTitle = SplitText.create('#contact h2',{type:'chars'})
@@ -21,8 +24,8 @@ useGSAP(()=>{
     .from(splitFTitle.chars,{opacity:0,yPercent:100,stagger:0.02,})
     .from('#contact h3',{opacity:0,yPercent:100,stagger:0.02,})
     .from('#contact p',{opacity:0,yPercent:100,stagger:0.02,})
-    .from('#f-left-leaf',{y:-50,diration:1,ease:'power1.inOut'})
-    .from('#f-right-leaf',{y:-50,diration:1,ease:'power1.inOut'},'<')
+    .from('#f-left-leaf',{y:-50,duration:1,ease:'power1.inOut'})
+    .from('#f-right-leaf',{y:-50,duration:1,ease:'power1.inOut'},'<')
 })
 return (
     <footer id='contact'>

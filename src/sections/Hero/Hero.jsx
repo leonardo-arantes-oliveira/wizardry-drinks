@@ -105,7 +105,6 @@ return (
     </section>
     <div className="video absolute inset-0">
         <video ref={videoRef} src={videoSrc} muted playsInline preload="auto" aria-hidden="true">
-        <track kind="captions" src="" srcLang="pt" label="Sem áudio" default />
         </video>
     </div>
 </>
