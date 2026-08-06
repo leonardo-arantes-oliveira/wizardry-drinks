@@ -18,7 +18,7 @@ useGSAP(()=>{
         }
     })
     paralaxTimeline.to('#c-left-leaf',{x: -100,y: 100})
-    paralaxTimeline.to('#c-right-leaf',{x: 100,y: 100})
+    paralaxTimeline.to('#c-right-leaf',{x: 100,y: 100},'<')
 })
 
 

@@ -22,7 +22,7 @@ useGSAP(()=>{
     .from('#contact h3',{opacity:0,yPercent:100,stagger:0.02,})
     .from('#contact p',{opacity:0,yPercent:100,stagger:0.02,})
     .from('#f-left-leaf',{y:-50,diration:1,ease:'power1.inOut'})
-    .from('#f-right-leaf',{y:-50,diration:1,ease:'power1.inOut'})
+    .from('#f-right-leaf',{y:-50,diration:1,ease:'power1.inOut'},'<')
 })
 return (
     <footer id='contact'>
@@ -59,7 +59,7 @@ return (
                         target='_blank'
                         rel='noopener noreferrer'
                         aria-label={social.name}>
-                            <img src={social.icon} alt="" />
+                            <img src={social.icon} alt="icone-rede-social" className='w-8 h-8' />
                         </a>
                     ))}
                 </div>

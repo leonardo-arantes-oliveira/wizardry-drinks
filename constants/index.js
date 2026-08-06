@@ -9,8 +9,8 @@ import profile4 from '../src/assets/images/profile4.png';
 
 // Importação de Ícones de Redes Sociais
 import instaIcon from '../src/assets/images/insta.png';
-import xIcon from '../src/assets/images/x.png';
-import fbIcon from '../src/assets/images/fb.png';
+import gitIconR from '../src/assets/images/gitroxo.png';
+import gitIconB from '../src/assets/images/gitbranco.webp';
 
 // Importação das Imagens do Slider/Drinks
 import drink1 from '../src/assets/images/drink1.png';
@@ -31,7 +31,7 @@ const navLinks = [
     title: "Sobre Nós",
 },
 {
-    id: "work",
+    id: "art",
     title: "A Arte",
 },
 {
@@ -141,19 +141,19 @@ const openingHours = [
 
 const socials = [
 {
-    name: "Instagram",
+    name: "Instagram-Wizardry",
     icon: instaIcon,
-    url: "#",
+    url: "https://www.instagram.com/wizardrycode/",
 },
 {
-    name: "X (Twitter)",
-    icon: xIcon,
-    url: "#",
+    name: "GitHub-Wizardry",
+    icon: gitIconR,
+    url: "https://github.com/wizardry-code",
 },
 {
-    name: "Facebook",
-    icon: fbIcon,
-    url: "#",
+    name: "GitHub-Leo",
+    icon: gitIconB,
+    url: "https://github.com/leonardo-arantes-oliveira",
 },
 ];
 
